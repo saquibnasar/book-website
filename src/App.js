@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./conponent/Home";
+// import Item from "./conponent/Item";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./conponent/Navbar";
+import Cart from "./conponent/Cart";
+import Login from "./conponent/Login";
+import SignUpPage1 from "./conponent/SignUpPage1";
+import SignUpPage2 from "./conponent/SignUpPage2";
+import SignUpPage3 from "./conponent/SignUpPage3";
+import ItemData from "./conponent/ItemData";
+import { Saquib, Item } from "./conponent/Item";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/item">
+            {ItemData.map((val) => {
+              return <Item />;
+            })}
+          </Route>
+          <Route exact path="/cart">
+            <Cart />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/signuppage1">
+            <SignUpPage1 />
+          </Route>
+          <Route exact path="/signuppage2">
+            <SignUpPage2 />
+          </Route>
+          <Route exact path="/signuppage3">
+            <SignUpPage3 />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
