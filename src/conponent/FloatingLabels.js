@@ -3,21 +3,26 @@ import React from "react";
 function FloatingLabels() {
   return (
     <>
-      <div class="form-floating mb-3">
-        <select
-          class="form-select"
-          aria-label="Default select example"
-          id="floatingInput"
-        >
-          <option value="">Month</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        {/* <label for="floatingInput" className="login-heading font-18">
-          Email address
-        </label> */}
-      </div>
+      <select
+        type="text"
+        id="inputMonth"
+        class="form-control login-heading font-18 ps-3 mb-3 shadow-none"
+        placeholder="Month"
+      >
+        <option value="0">Month</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
     </>
   );
 }

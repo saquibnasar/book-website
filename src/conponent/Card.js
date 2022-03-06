@@ -7,7 +7,7 @@ export default function Card(props) {
   return (
     <>
       <div className="col-xl-3 col-md-5 mt-5">
-        <div className="card">
+        <div className="card mx-auto">
           <div className="image_frame">
             <Link to={props.link}>
               <img

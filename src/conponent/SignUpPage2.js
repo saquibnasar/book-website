@@ -14,9 +14,6 @@ function SignUpPage1() {
   const yearPlaceholder = "Year";
   const yearTyppe = "number";
   const yearId = "inputYear";
-  const genderPlaceholder = "Gender";
-  const genderTyppe = "text";
-  const genderId = "inputGender";
 
   return (
     <>
@@ -45,11 +42,51 @@ function SignUpPage1() {
               </div>
             </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
-              <Input
-                type={genderTyppe}
-                id={genderId}
-                placeholder={genderPlaceholder}
-              />
+              <h4 className="mb-3 color-light-brown font-21">Gender</h4>
+              <div class="d-flex justify-content-between">
+                <div className="">
+                  <input
+                    class="form-check-input me-2 shadow-none"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label
+                    class="form-check-label ff-Roboto"
+                    for="flexRadioDefault1 "
+                  >
+                    Male
+                  </label>
+                </div>
+                <div className="">
+                  <input
+                    class="form-check-input me-2 shadow-none"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label
+                    class="form-check-label ff-Roboto"
+                    for="flexRadioDefault1"
+                  >
+                    Female
+                  </label>
+                </div>
+                <div className="">
+                  <input
+                    class="form-check-input me-2 shadow-none"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label
+                    class="form-check-label ff-Roboto"
+                    for="flexRadioDefault1"
+                  >
+                    Rather not say
+                  </label>
+                </div>
+              </div>
             </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
               <button

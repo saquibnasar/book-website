@@ -7,7 +7,6 @@
     padding-top: 26px;
     padding-left: 5rem;
     padding-right: 5rem;
-
     @include media4 {
       padding-left: 2rem;
       padding-right: 2rem;
@@ -26,6 +25,14 @@
         padding-right: 48px;
         border: 1px solid #dddddd;
         padding-bottom: 22px;
+        @include media4 {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        @include iphonex {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
         .card-title {
           @include media2 {
             margin-top: 1rem;

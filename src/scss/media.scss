@@ -29,3 +29,8 @@
     @content;
   }
 }
+@mixin iphonex {
+  @media (max-width: 400px) {
+    @content;
+  }
+}

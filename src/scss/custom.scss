@@ -14,7 +14,6 @@ $brown: #514e4e;
 $bg-dark-brown: #48474e;
 $color-light-brown: #5c5454;
 $color-dark-brown: #393333;
-
 $font-28: 28px;
 $font-22: 22px;
 $font-20: 20px;
@@ -124,7 +123,7 @@ $font-16: 16px;
   border-bottom: 0.6px solid rgba(115, 114, 155, 0.6);
 }
 .margin-auto {
-  @include media2 {
+  @include media1 {
     margin-inline: auto;
   }
 }
@@ -148,3 +147,6 @@ button:hover {
 //     color: red;
 //   }
 // }
+.ff-Roboto {
+  font-family: "Roboto", sans-serif;
+}
