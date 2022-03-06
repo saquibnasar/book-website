@@ -9,7 +9,9 @@ function FloatingLabels() {
         class="form-control login-heading font-18 ps-3 mb-3 shadow-none"
         placeholder="Month"
       >
-        <option value="0">Month</option>
+        <option className="d-none" value="0">
+          Month
+        </option>
         <option value="1">January</option>
         <option value="2">February</option>
         <option value="3">March</option>
