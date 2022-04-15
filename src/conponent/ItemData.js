@@ -1,6 +1,6 @@
 const ItemData = [
   {
-    id: "itemId1",
+    id: "bookId1",
     book: "Harry Potter and the Half Blood Prince",
     Author: "J. K. Rowling",
     images:
@@ -9,7 +9,7 @@ const ItemData = [
     Price: "938",
   },
   {
-    id: "itemId2",
+    id: "bookId2",
     book: "Mindset: The New Psychology of Success",
     Author: "Carol S. Dweck",
     images:
@@ -19,7 +19,7 @@ const ItemData = [
     Price: "378",
   },
   {
-    id: "itemId2",
+    id: "bookId3",
     book: "Dune Frank Herbert",
     Author: "Frank Herbert",
     images:
@@ -29,7 +29,7 @@ const ItemData = [
     Price: "768",
   },
   {
-    id: "itemId2",
+    id: "bookId4",
     book: "The White Tiger",
     Author: "Aravind Adiga",
     images:

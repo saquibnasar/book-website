@@ -5,6 +5,7 @@ import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function Content(props) {
+  // var host = window.location.hostname;
   return (
     <>
       <div className="recent-book">
@@ -18,7 +19,7 @@ function Content(props) {
                     <Card
                       book={val.book}
                       images={val.images}
-                      link={val.id}
+                      link={`/item/${val.id}`}
                       Author={val.Author}
                       Available={val.Available}
                       Price={val.Price}

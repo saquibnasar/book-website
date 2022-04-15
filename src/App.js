@@ -7,8 +7,7 @@ import Login from "./conponent/Login";
 import SignUpPage1 from "./conponent/SignUpPage1";
 import SignUpPage2 from "./conponent/SignUpPage2";
 import SignUpPage3 from "./conponent/SignUpPage3";
-import ItemData from "./conponent/ItemData";
-import { Saquib, Item } from "./conponent/Item";
+import { Item } from "./conponent/Item";
 
 function App() {
   return (
@@ -16,27 +15,25 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path="/item">
-            {ItemData.map((val) => {
-              return <Item />;
-            })}
+          <Route exact path='/item/:id'>
+            <Item />
           </Route>
-          <Route exact path="/cart">
+          <Route exact path='/cart'>
             <Cart />
           </Route>
-          <Route exact path="/login">
+          <Route exact path='/login'>
             <Login />
           </Route>
-          <Route exact path="/signuppage1">
+          <Route exact path='/signuppage1'>
             <SignUpPage1 />
           </Route>
-          <Route exact path="/signuppage2">
+          <Route exact path='/signuppage2'>
             <SignUpPage2 />
           </Route>
-          <Route exact path="/signuppage3">
+          <Route exact path='/signuppage3'>
             <SignUpPage3 />
           </Route>
         </Switch>
