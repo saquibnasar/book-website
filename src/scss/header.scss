@@ -26,14 +26,13 @@
     height: 65px;
     background: #453e95;
     border-radius: 10px;
-    * {
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 27px;
-      line-height: 40px;
-      color: $white;
-      text-decoration: none;
-    }
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    color: $white;
+    text-decoration: none;
+    padding: 12px 70px;
   }
 }

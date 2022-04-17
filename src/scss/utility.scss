@@ -17,15 +17,13 @@
   @include media1 {
     margin-top: 1rem;
   }
-  * {
-    text-decoration: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 33px;
-    color: $white !important;
-  }
+  text-decoration: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  color: $white !important;
 }
 .btn-main:hover {
   * {
@@ -167,4 +165,15 @@
 .address {
   padding-bottom: 5rem !important;
   box-shadow: none !important;
+}
+.search {
+  @include media1 {
+    margin-bottom: 1rem;
+  }
+  input {
+    background: #707070;
+  }
+  input::placeholder {
+    color: #fff;
+  }
 }

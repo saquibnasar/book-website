@@ -36,9 +36,9 @@ function Navbar() {
                 </Link>
               </button>
             </form>
-            <button type="button" className="btn-main">
-              <Link to="/login">login</Link>
-            </button>
+            <Link to="/login" className="btn-main">
+              login
+            </Link>
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link" to="/#about">

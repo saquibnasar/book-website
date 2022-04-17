@@ -80,12 +80,9 @@ $font-16: 16px;
 }
 .cart-btn {
   padding: 18px 28px;
-  a {
-    text-decoration: none;
-    color: $white;
-  }
+  text-decoration: none;
+  color: $white;
 }
-
 .cart-list {
   a {
     font-family: Poppins;

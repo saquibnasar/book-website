@@ -41,12 +41,19 @@ function Login() {
               </Link>
             </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
-              <button
+              {/* <button
                 type="button"
-                class="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0"
+                href="/"
+                className="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0"
               >
                 Sing in
-              </button>
+              </button> */}
+              <a
+                href="#"
+                className="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0 text-center d-inline-block text-decoration-none"
+              >
+                Sing in
+              </a>
             </div>
             <div className="col-md-11 col-sm-12 m-auto mb-3 text-center">
               <h5 className="login-heading color-light-brown font-21">

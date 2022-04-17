@@ -7,7 +7,6 @@ import Login from "./conponent/Login";
 import SignUpPage1 from "./conponent/SignUpPage1";
 import SignUpPage2 from "./conponent/SignUpPage2";
 import SignUpPage3 from "./conponent/SignUpPage3";
-import SignUpPage4 from "./conponent/SignUpPage4";
 import { Item } from "./conponent/Item";
 
 function App() {
@@ -37,9 +36,9 @@ function App() {
           <Route exact path="/signuppage3">
             <SignUpPage3 />
           </Route>
-          <Route exact path="/signuppage4">
+          {/* <Route exact path="/signuppage4">
             <SignUpPage4 />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </>

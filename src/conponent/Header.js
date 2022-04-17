@@ -12,9 +12,9 @@ function Header() {
             Get Your New Book
             <br /> Collection
           </h1>
-          <button type="button" className="header-btn">
-            <a href="/">Donate</a>
-          </button>
+          <a href="/" className="header-btn">
+            Donate
+          </a>
         </div>
       </section>
     </>

@@ -33,17 +33,12 @@ function SignUpPage2() {
               />
             </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
-              <button
-                type="button"
-                class="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0"
+              <Link
+                to="/signuppage2"
+                className="text-decoration-none text-white w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0 d-inline-block text-center"
               >
-                <Link
-                  to="/signuppage2"
-                  className="text-decoration-none text-white"
-                >
-                  Next
-                </Link>
-              </button>
+                Next
+              </Link>
             </div>
           </div>
         </div>

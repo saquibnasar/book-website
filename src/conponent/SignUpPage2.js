@@ -14,34 +14,14 @@ function SignUpPage1() {
   const yearPlaceholder = "Year";
   const yearTyppe = "number";
   const yearId = "inputYear";
+  const firstNamePlaceholder = "Address";
 
   return (
     <>
       <section className="login bg-pri d-grid align-items-center">
         <div className="container-fluid">
           <div className="row flex-column form bg-white m-auto">
-            <div className="col-md-11 col-sm-12 m-auto">
-              <div className="row justify-content-between">
-                <div className="col-md-4 col-sm-12">
-                  <Input
-                    type={dayTyppe}
-                    id={dayId}
-                    placeholder={dayPlaceholder}
-                  />
-                </div>
-                <div className="col-md-4 col-sm-12">
-                  <FloatingLabels />
-                </div>
-                <div className="col-md-4 col-sm-12">
-                  <Input
-                    type={yearTyppe}
-                    id={yearId}
-                    placeholder={yearPlaceholder}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-11 col-sm-12 mx-auto my-3">
+            <div className="col-md-11 col-sm-12 mx-auto">
               <h4 className="mb-3 color-light-brown font-21">Gender</h4>
               <div class="d-flex justify-content-between">
                 <div className="">
@@ -88,18 +68,20 @@ function SignUpPage1() {
                 </div>
               </div>
             </div>
+            <div className="col-md-11 col-sm-12 m-auto my-3">
+              <Label for="inputEmail" content="Address" />
+              <textarea
+                class="form-control address"
+                placeholder={firstNamePlaceholder}
+              ></textarea>
+            </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
-              <button
-                type="button"
-                class="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0"
+              <Link
+                to="/signuppage3"
+                className="text-decoration-none text-white w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0 d-inline-block text-center"
               >
-                <Link
-                  to="/signuppage3"
-                  className="text-decoration-none text-white"
-                >
-                  Next
-                </Link>
-              </button>
+                Next
+              </Link>
             </div>
           </div>
         </div>
