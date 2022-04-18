@@ -8,7 +8,7 @@ function SignUp() {
   const FullNameId = "inputName";
   const firstNamePlaceholder = "Address";
   const emailplaceholder = "Enter your Email";
-  const emailTyppe = "number";
+  const emailTyppe = "Email";
   const emailId = "inputEmail";
   const phoneplaceholder = "Enter your Phone Number";
   const phoneTyppe = "number";
