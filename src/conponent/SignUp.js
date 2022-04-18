@@ -7,9 +7,12 @@ function SignUp() {
   const FullNameTyppe = "text";
   const FullNameId = "inputName";
   const firstNamePlaceholder = "Address";
-  const emailplaceholder = "Enter your Phone Number";
+  const emailplaceholder = "Enter your Email";
   const emailTyppe = "number";
   const emailId = "inputEmail";
+  const phoneplaceholder = "Enter your Phone Number";
+  const phoneTyppe = "number";
+  const phoneId = "inputPhone";
   const passwordplaceholder = "Enter your password";
   const passwordTyppe = "password";
   const passwordId = "inputPassword";
@@ -23,7 +26,7 @@ function SignUp() {
         <div className="container-fluid">
           <div className="row flex-column form bg-white m-auto">
             <div className="col-md-11 col-sm-12 m-auto">
-              <Label for="inputEmail" content="First Name" />
+              <Label for="inputEmail" content="Full Name" />
               <Input
                 type={FullNameTyppe}
                 id={FullNameId}
@@ -31,11 +34,19 @@ function SignUp() {
               />
             </div>
             <div className="col-md-11 col-sm-12 m-auto my-3">
-              <Label for="inputEmail" content="Phone Number" />
+              <Label for="inputEmail" content="Email" />
               <Input
                 type={emailTyppe}
                 id={emailId}
                 placeholder={emailplaceholder}
+              />
+            </div>
+            <div className="col-md-11 col-sm-12 m-auto my-3">
+              <Label for="inputEmail" content="Phone Number" />
+              <Input
+                type={phoneTyppe}
+                id={phoneId}
+                placeholder={phoneplaceholder}
               />
             </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
