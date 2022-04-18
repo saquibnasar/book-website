@@ -9,7 +9,7 @@ export default function Donate() {
       >
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-7 mt-5">
+            <div className="col-xl-4 col-md-6 col-10 mt-5">
               <div className="card mx-auto" style={{ borderRadius: 8 }}>
                 <div className="image_frame">
                   <img

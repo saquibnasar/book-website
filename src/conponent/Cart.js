@@ -20,7 +20,7 @@ function Cart() {
               <PriceDetail />
             </div>
           </div>
-          <div className="row mt-5 ">
+          <div className="row mt-5 mb-5">
             <div className="col-xl-7 col-lg-6 col-md-9 margin-auto">
               <div className="priceDetail_border bg-white">
                 <h5 className="fw-medium font-19 dark-white">

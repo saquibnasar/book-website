@@ -1,12 +1,9 @@
 import Home from "./conponent/Home";
-// import Item from "./conponent/Item";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./conponent/Navbar";
 import Cart from "./conponent/Cart";
 import Login from "./conponent/Login";
-import SignUpPage1 from "./conponent/SignUpPage1";
-import SignUpPage2 from "./conponent/SignUpPage2";
-import SignUpPage3 from "./conponent/SignUpPage3";
+import SignUp from "./conponent/SignUp";
 import { Item } from "./conponent/Item";
 import Upload from "./conponent/Upload";
 import Donate from "./conponent/Donate";
@@ -29,14 +26,8 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
-          <Route exact path="/signuppage1">
-            <SignUpPage1 />
-          </Route>
-          <Route exact path="/signuppage2">
-            <SignUpPage2 />
-          </Route>
-          <Route exact path="/signuppage3">
-            <SignUpPage3 />
+          <Route exact path="/signUp">
+            <SignUp />
           </Route>
           <Route exact path="/upload">
             <Upload />

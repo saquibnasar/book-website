@@ -41,13 +41,6 @@ function Login() {
               </Link>
             </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
-              {/* <button
-                type="button"
-                href="/"
-                className="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0"
-              >
-                Sing in
-              </button> */}
               <a
                 href="#"
                 className="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0 text-center d-inline-block text-decoration-none"
@@ -59,7 +52,7 @@ function Login() {
               <h5 className="login-heading color-light-brown font-21">
                 Don’t have an account?
                 <Link
-                  to="/signuppage1"
+                  to="/signUp"
                   className="font-23 color-dark-brown text-decoration-none"
                 >
                   Sign up for free

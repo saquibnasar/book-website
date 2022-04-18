@@ -2,9 +2,13 @@ import React from "react";
 import Input from "./Input";
 import Label from "./Label";
 
-function SignUpPage3() {
-  const emailplaceholder = "Enter your email";
-  const emailTyppe = "Email";
+function SignUp() {
+  const FullNamePlaceholder = "Full Name";
+  const FullNameTyppe = "text";
+  const FullNameId = "inputName";
+  const firstNamePlaceholder = "Address";
+  const emailplaceholder = "Enter your Phone Number";
+  const emailTyppe = "number";
   const emailId = "inputEmail";
   const passwordplaceholder = "Enter your password";
   const passwordTyppe = "password";
@@ -15,11 +19,19 @@ function SignUpPage3() {
 
   return (
     <>
-      <section className="login bg-pri d-grid align-items-center">
+      <section className="login bg-pri d-grid align-items-center h-100 pt-5 pb-5">
         <div className="container-fluid">
           <div className="row flex-column form bg-white m-auto">
             <div className="col-md-11 col-sm-12 m-auto">
-              <Label for="inputEmail" content="Email" />
+              <Label for="inputEmail" content="First Name" />
+              <Input
+                type={FullNameTyppe}
+                id={FullNameId}
+                placeholder={FullNamePlaceholder}
+              />
+            </div>
+            <div className="col-md-11 col-sm-12 m-auto my-3">
+              <Label for="inputEmail" content="Phone Number" />
               <Input
                 type={emailTyppe}
                 id={emailId}
@@ -42,9 +54,16 @@ function SignUpPage3() {
                 placeholder={confirmPasswordplaceholder}
               />
             </div>
+            <div className="col-md-11 col-sm-12 m-auto my-3">
+              <Label for="inputEmail" content="Address" />
+              <textarea
+                class="form-control address"
+                placeholder={firstNamePlaceholder}
+              ></textarea>
+            </div>
             <div className="col-md-11 col-sm-12 mx-auto my-3">
               <button
-                type="button"
+                type="submit"
                 class="w-100 login-heading bg-dark-brown p-3 text-white rounded font-26 border-0"
               >
                 Sing Up
@@ -57,4 +76,4 @@ function SignUpPage3() {
   );
 }
 
-export default SignUpPage3;
+export default SignUp;
