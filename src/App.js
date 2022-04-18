@@ -8,6 +8,8 @@ import SignUpPage1 from "./conponent/SignUpPage1";
 import SignUpPage2 from "./conponent/SignUpPage2";
 import SignUpPage3 from "./conponent/SignUpPage3";
 import { Item } from "./conponent/Item";
+import Upload from "./conponent/Upload";
+import Donate from "./conponent/Donate";
 
 function App() {
   return (
@@ -36,9 +38,12 @@ function App() {
           <Route exact path="/signuppage3">
             <SignUpPage3 />
           </Route>
-          {/* <Route exact path="/signuppage4">
-            <SignUpPage4 />
-          </Route> */}
+          <Route exact path="/upload">
+            <Upload />
+          </Route>
+          <Route exact path="/donate">
+            <Donate />
+          </Route>
         </Switch>
       </Router>
     </>

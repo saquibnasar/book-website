@@ -12,7 +12,7 @@ function Header() {
             Get Your New Book
             <br /> Collection
           </h1>
-          <a href="/" className="header-btn">
+          <a href="/upload" className="header-btn">
             Donate
           </a>
         </div>
