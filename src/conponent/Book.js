@@ -23,16 +23,12 @@ function Book(props) {
                   </h5>
                 </div>
               </div>
-              <button
-                type="button"
-                href="/"
-                className="cart-btn dark-blue-75 me-4 "
-              >
-                <a href="/">Add TO CART</a>
-              </button>
-              <button type="button" className="cart-btn dark-blue-75-2">
-                <a href="/">BUY NOW</a>
-              </button>
+              <a href="/" className="cart-btn dark-blue-75 me-4">
+                Add TO CART
+              </a>
+              <a href="/" className="cart-btn dark-blue-75 me-4">
+                BUY NOW
+              </a>
             </div>
           </div>
         </div>

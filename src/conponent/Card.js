@@ -13,7 +13,7 @@ export default function Card(props) {
               <img
                 src={props.images}
                 alt="book image"
-                className="img-fluid h-100 w-100"
+                className="img-fluid h-100 w-100 border-radius-15"
               />
             </Link>
           </div>

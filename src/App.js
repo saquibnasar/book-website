@@ -7,6 +7,7 @@ import SignUp from "./conponent/SignUp";
 import { Item } from "./conponent/Item";
 import Upload from "./conponent/Upload";
 import Donate from "./conponent/Donate";
+import Search from "./conponent/Search";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route exact path="/donate">
             <Donate />
+          </Route>
+          <Route exact path="/search">
+            <Search />
           </Route>
         </Switch>
       </Router>
